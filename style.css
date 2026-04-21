@@ -2,6 +2,9 @@
   --magical-merlin: #0091d0;
   --white-frost: #e0e7ef;
   --solar-power: #f6b241;
+
+  --sidebar-bottom-margin: 40px;
+  --sidebar-left-margin: 10px;
 }
 
 .container {
@@ -22,7 +25,39 @@
 .sidebar {
   grid-area: sidebar;
   background-color: var(--magical-merlin);
+  color: white;
+  display: flex;
+  flex-direction: column;
 }
+
+.sidebar li {
+  list-style-type: none;
+}
+
+.sidebar ul {
+  padding: 0px;
+}
+
+.brand {
+  margin-bottom: var(--sidebar-bottom-margin);
+  display: grid;
+  grid-auto-flow: column;
+}
+
+.primary-nav,
+.secondary-nav {
+  margin-left: var(--sidebar-left-margin);
+  margin-bottom: var(--sidebar-bottom-margin);
+  display: grid;
+  grid-template-columns: 1em 1fr;
+  align-items: center;
+  column-gap: 1em;
+}
+
+.nav-icon {
+  color: white;
+}
+
 
 .content {
   grid-area: content;
