@@ -1,8 +1,30 @@
-* {
-  box-sizing: border-box;
+:root {
+  --magical-merlin: #0091d0;
+  --white-frost: #e0e7ef;
+  --solar-power: #f6b241;
 }
 
-body {
+.container {
   display: grid;
-  justify-items: center;
+  grid-template-columns: 1fr 4fr;
+  grid-template-rows: 1fr 5fr;
+  grid-template-areas:
+    "sidebar header"
+    "sidebar content";
+  height: 100vh;
+}
+
+.header {
+  grid-area: header;
+  background-color: white;
+}
+
+.sidebar {
+  grid-area: sidebar;
+  background-color: var(--magical-merlin);
+}
+
+.content {
+  grid-area: content;
+  background-color: var(--white-frost);
 }
