@@ -4,7 +4,7 @@
   --solar-power: #f6b241;
 
   --sidebar-bottom-margin: 40px;
-  --sidebar-left-margin: 10px;
+  --sidebar-left-margin: 10%;
 }
 
 .container {
@@ -39,11 +39,47 @@
 }
 
 .brand {
-  margin-bottom: var(--sidebar-bottom-margin);
-  display: grid;
+  margin-top: 20px;
   grid-auto-flow: column;
 }
 
+.logo {
+  justify-self: end;
+  display: grid;
+  grid-template-rows: repeat(3, 0.4em);
+  grid-template-columns: repeat(2, 0.6em);
+  grid-template-areas:
+    "logo-section-1 logo-section-2"
+    "logo-section-1 logo-section-4"
+    "logo-section-3 logo-section-4";
+  gap: 2px;
+}
+
+.logo-section-1 {
+  background-color: white;
+  grid-area: logo-section-1;
+}
+
+.logo-section-2 {
+  background-color: white;
+  grid-area: logo-section-2;
+}
+
+.logo-section-3 {
+  background-color: white;
+  grid-area: logo-section-3;
+}
+
+.logo-section-4 {
+  background-color: white;
+  grid-area: logo-section-4;
+}
+
+.brand-title {
+  justify-self: start;
+}
+
+.brand,
 .primary-nav,
 .secondary-nav {
   margin-left: var(--sidebar-left-margin);
