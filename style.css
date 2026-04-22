@@ -60,6 +60,9 @@
 .brand {
   margin-top: 20px;
   grid-auto-flow: column;
+  font-size: xx-large;
+  font-weight: bold;
+  column-gap: 0.6em;
 }
 
 .logo {
@@ -94,10 +97,6 @@
   grid-area: logo-section-4;
 }
 
-.brand-title {
-  justify-self: start;
-}
-
 .brand,
 .primary-nav,
 .secondary-nav {
@@ -106,13 +105,19 @@
   display: grid;
   grid-template-columns: 1em 1fr;
   align-items: center;
+}
+
+.primary-nav,
+.secondary-nav {
+  font-size: x-large;
+  font-weight: bold;
   column-gap: 1em;
+  row-gap: 0.5em;
 }
 
 .nav-icon {
   color: white;
 }
-
 
 .content {
   grid-area: content;
