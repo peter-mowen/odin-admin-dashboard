@@ -20,6 +20,7 @@
   --magical-merlin: #0091d0;
   --white-frost: #e0e7ef;
   --solar-power: #f6b241;
+  --steam-bath: #ccd0d6;
 
   --sidebar-bottom-margin: 40px;
 }
@@ -38,6 +39,8 @@
 .header {
   grid-area: header;
   background-color: white;
+  box-shadow: var(--steam-bath) 20px 0px 6px 3px;
+  z-index: 1;
 }
 
 .sidebar {
@@ -47,6 +50,8 @@
   display: flex;
   flex-direction: column;
   padding: 0px 30px;
+  box-shadow: var(--steam-bath) 2px 0px 3px 1px;
+  z-index: 2;
 }
 
 .sidebar li {
