@@ -22,12 +22,11 @@
   --solar-power: #f6b241;
 
   --sidebar-bottom-margin: 40px;
-  --sidebar-left-margin: 10%;
 }
 
 .container {
   display: grid;
-  grid-template-columns: 1fr 4fr;
+  grid-template-columns: 1fr 6fr;
   grid-template-rows: 1fr 5fr;
   grid-template-areas:
     "sidebar header"
@@ -47,6 +46,7 @@
   color: white;
   display: flex;
   flex-direction: column;
+  padding: 0px 30px;
 }
 
 .sidebar li {
@@ -100,7 +100,6 @@
 .brand,
 .primary-nav,
 .secondary-nav {
-  margin-left: var(--sidebar-left-margin);
   margin-bottom: var(--sidebar-bottom-margin);
   display: grid;
   grid-template-columns: 1em 1fr;
