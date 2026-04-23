@@ -132,6 +132,7 @@
   grid-template-areas:
     "projects announcements"
     "projects trending";
+  padding: 20px;
 }
 
 .projects {
