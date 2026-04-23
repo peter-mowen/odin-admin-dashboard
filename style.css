@@ -21,8 +21,11 @@
   --white-frost: #e0e7ef;
   --solar-power: #f6b241;
   --steam-bath: #ccd0d6;
+  --grey-web: #636363;
 
   --sidebar-bottom-margin: 40px;
+
+  --card-border-radius: 7px;
 }
 
 .container {
@@ -137,6 +140,54 @@
 
 .projects {
   grid-area: projects;
+}
+
+.projects-panel {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(min-content, 1fr));
+  gap: 30px;
+}
+
+.card {
+  background-color: white;
+  padding: 30px 20px 30px 30px;
+  border-radius: var(--card-border-radius);
+  display: flex;
+  flex-direction: column;
+  box-shadow: var(--steam-bath) 2px 3px 3px 1px;
+  position: relative;
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 6px;
+  background-color: var(--solar-power);
+  border-top-left-radius: var(--card-border-radius);
+  border-bottom-left-radius: var(--card-border-radius);
+}
+
+.card-content {
+  font-size: small;
+  color: var(--grey-web);
+  flex-grow: 1;
+}
+
+.card-icons {
+  display: flex;
+  height: 1.5rem;
+  justify-content: flex-end;
+  align-content: flex-end;
+  gap: 1rem;
+  margin-top: 20px;
+}
+
+.projects-title {
+  font-size: large;
+  margin-bottom: 0.5em;
 }
 
 .announcements {
