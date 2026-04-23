@@ -30,7 +30,7 @@
 
 .container {
   display: grid;
-  grid-template-columns: 1fr 6fr;
+  grid-template-columns: minmax(max-content, 1fr) 6fr;
   grid-template-rows: 1fr 5fr;
   grid-template-areas:
     "sidebar header"
@@ -67,51 +67,28 @@
 
 .brand {
   margin-top: 20px;
-  grid-auto-flow: column;
+  display: flex;
   font-size: xx-large;
+  gap: 0.5em;
+  margin-bottom: var(--sidebar-bottom-margin);
+}
+
+.brand-title {
   font-weight: bold;
-  column-gap: 0.6em;
 }
 
-.logo {
-  justify-self: end;
-  display: grid;
-  grid-template-rows: repeat(3, 0.4em);
-  grid-template-columns: repeat(2, 0.6em);
-  grid-template-areas:
-    "logo-section-1 logo-section-2"
-    "logo-section-1 logo-section-4"
-    "logo-section-3 logo-section-4";
-  gap: 2px;
+.brand > img {
+  width: 1.5em;
+  aspect-ratio: 1 / 1;
 }
 
-.logo-section-1 {
-  background-color: white;
-  grid-area: logo-section-1;
-}
-
-.logo-section-2 {
-  background-color: white;
-  grid-area: logo-section-2;
-}
-
-.logo-section-3 {
-  background-color: white;
-  grid-area: logo-section-3;
-}
-
-.logo-section-4 {
-  background-color: white;
-  grid-area: logo-section-4;
-}
-
-.brand,
 .primary-nav,
 .secondary-nav {
   margin-bottom: var(--sidebar-bottom-margin);
   display: grid;
   grid-template-columns: 1em 1fr;
   align-items: center;
+  padding-left: 0.5em;
 }
 
 .primary-nav,
