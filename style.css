@@ -172,12 +172,31 @@
   grid-area: announcements;
 }
 
+.announcements-content {
+  background-color: white;
+  padding: 20px 30px;
+  border-radius: var(--border-radius);
+  box-shadow: var(--steam-bath) 2px 3px 3px 1px;
+}
+
+.announcement > p {
+  font-size: small;
+  color: var(--grey-web);
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+}
+
+.announcements-content > hr {
+  margin: 10px 0px;
+}
+
 .trending {
   grid-area: trending;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  box-shadow: var(--steam-bath) 2px 3px 3px 1px;
 }
 
 .trending-users-container {
@@ -188,6 +207,7 @@
   gap: 20px;
   border-radius: var(--border-radius);
   align-content: center;
+  box-shadow: var(--steam-bath) 2px 3px 3px 1px;
 }
 
 .trending-user-project {
