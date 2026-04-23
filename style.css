@@ -99,10 +99,6 @@
   row-gap: 0.5em;
 }
 
-.nav-icon {
-  color: white;
-}
-
 .content {
   grid-area: content;
   background-color: var(--white-frost);
