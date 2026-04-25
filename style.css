@@ -44,6 +44,36 @@
   background-color: white;
   box-shadow: var(--steam-bath) 20px 0px 6px 3px;
   z-index: 1;
+  display: grid;
+  grid-template-columns: minmax(max-content, 7fr) minmax(max-content, 3fr);
+  grid-template-rows: minmax(max-content, 4fr) minmax(max-content, 6fr);
+}
+
+.search {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  padding-top: 1.5rem;
+}
+
+.search > button {
+  padding: 0;
+  border: none;
+  background: none;
+  padding-left: 3rem;
+}
+
+.search > button > img {
+  height: 2rem;
+  width: auto;
+}
+
+.search > input {
+  border-radius: 50px;
+  flex-grow: 1;
+  border: none;
+  background-color: var(--white-frost);
+  height: 2rem;
 }
 
 .sidebar {
