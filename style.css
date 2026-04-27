@@ -47,33 +47,56 @@
   display: grid;
   grid-template-columns: minmax(max-content, 7fr) minmax(max-content, 3fr);
   grid-template-rows: minmax(max-content, 4fr) minmax(max-content, 6fr);
+  column-gap: 1rem;
+  align-items: center;
 }
 
 .search {
   display: flex;
   justify-content: center;
+  align-content: center;
   gap: 1.5rem;
-  padding-top: 1.5rem;
 }
 
-.search > button {
+.search button {
   padding: 0;
   border: none;
   background: none;
   padding-left: 3rem;
 }
 
-.search > button > img {
+.search button > img {
   height: 2rem;
   width: auto;
 }
 
-.search > input {
+.search input {
   border-radius: 50px;
   flex-grow: 1;
   border: none;
   background-color: var(--white-frost);
   height: 2rem;
+}
+
+.user-notification-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2.5rem;
+}
+
+.icon {
+  height: 1.5rem;
+  width: auto;
+}
+
+.profile-picture-small {
+  height: 3rem;
+}
+
+.large-bold {
+  font-size: large;
+  font-weight: bold;
 }
 
 .sidebar {
