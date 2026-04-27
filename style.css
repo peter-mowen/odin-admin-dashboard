@@ -26,6 +26,7 @@
   --sidebar-bottom-margin: 40px;
 
   --border-radius: 7px;
+  --header-padding-left: 3rem;
 }
 
 .container {
@@ -56,13 +57,13 @@
   justify-content: center;
   align-content: center;
   gap: 1.5rem;
+  padding-left: var(--header-padding-left);
 }
 
 .search button {
   padding: 0;
   border: none;
   background: none;
-  padding-left: 3rem;
 }
 
 .search button > img {
@@ -97,6 +98,36 @@
 .large-bold {
   font-size: large;
   font-weight: bold;
+}
+
+.user-profile-info {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: repeat(2, minmax(max-content, 1fr));
+  grid-template-areas:
+    "profile-picture hi-there"
+    "profile-picture username";
+  column-gap: 1rem;
+  padding-left: var(--header-padding-left);
+}
+
+.profile-picture-large {
+  grid-area: profile-picture;
+  height: 4rem;
+  justify-self: end;
+  align-self: center;
+}
+
+#hi-there {
+  grid-area: hi-there;
+  align-self: end;
+}
+
+#user-name-with-tag {
+  grid-area: username;
+  font-size: x-large;
+  font-weight: bold;
+  align-self: start;
 }
 
 .sidebar {
