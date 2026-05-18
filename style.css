@@ -185,10 +185,6 @@ button {
   grid-template-columns: 1em 1fr;
   align-items: center;
   padding-left: 0.5em;
-}
-
-.primary-nav,
-.secondary-nav {
   font-size: x-large;
   font-weight: bold;
   column-gap: 1em;
