@@ -195,6 +195,11 @@ button {
   row-gap: 0.5em;
 }
 
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
 .content {
   grid-area: content;
   background-color: var(--white-frost);
