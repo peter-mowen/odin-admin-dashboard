@@ -315,8 +315,9 @@ nav a {
 
 .trending-users-container > img {
   border-radius: 50%;
-  max-width: 100%;
+  max-width: auto;
   height: 3rem;
+  object-fit: cover;
 }
 
 .trending-user {
