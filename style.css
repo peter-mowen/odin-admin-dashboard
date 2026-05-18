@@ -165,7 +165,7 @@ button {
   margin-top: 20px;
   display: flex;
   font-size: xx-large;
-  gap: 0.5em;
+  gap: 0.5rem;
   margin-bottom: var(--sidebar-bottom-margin);
 }
 
@@ -182,13 +182,13 @@ button {
 .secondary-nav {
   margin-bottom: var(--sidebar-bottom-margin);
   display: grid;
-  grid-template-columns: 1em 1fr;
+  grid-template-columns: 1rem 1fr;
   align-items: center;
-  padding-left: 0.5em;
+  padding-left: 0.5rem;
   font-size: x-large;
   font-weight: bold;
-  column-gap: 1em;
-  row-gap: 0.5em;
+  column-gap: 1rem;
+  row-gap: 0.5rem;
 }
 
 nav a {
@@ -262,7 +262,7 @@ nav a {
 
 .content-title {
   font-size: large;
-  margin-bottom: 0.5em;
+  margin-bottom: 0.5rem;
 }
 
 .announcements {
