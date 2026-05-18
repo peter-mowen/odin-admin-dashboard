@@ -178,22 +178,30 @@ button {
   aspect-ratio: 1 / 1;
 }
 
-.primary-nav,
-.secondary-nav {
+nav {
   margin-bottom: var(--sidebar-bottom-margin);
-  display: grid;
-  grid-template-columns: 1rem 1fr;
-  align-items: center;
   padding-left: 0.5rem;
-  font-size: x-large;
-  font-weight: bold;
-  column-gap: 1rem;
-  row-gap: 0.5rem;
+}
+
+nav > ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem
 }
 
 nav a {
+  display: flex;
+  gap: 1rem;
+  font-size: x-large;
+  font-weight: bold;
+  align-items: center;
+
   color: white;
   text-decoration: none;
+}
+
+nav img {
+  height: 1em;
 }
 
 .content {
